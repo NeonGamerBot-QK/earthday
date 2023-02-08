@@ -1,0 +1,117 @@
+<div class="hero">
+    <div class="container mx-auto max-w-6xl p-8 2xl:px-0 hero-content">
+      <div class="w-full text-center pt-2">
+        <h1 class="mb-20 text-5xl font-bold">
+Energy Conservation
+      </h1>
+      <br />
+<div class="divider lg:divider p-5 text-4xl font-bold">Energy Conserving Items</div> 
+      <div class="w-full m-w-screen flex items-center justify-center">   
+     <% energyconserv1[0].forEach(({ name, data, img }) => { %>
+        <div class="card m-5 w-96 bg-base-700 shadow-xl">
+          <figure><img src="<%=img%>" class="max-h-64 w-full"/></figure>
+            <div class="card-body">
+              <h2 class="card-title"><%=name%></h2>
+              <div>
+                <p>
+                    <%=data%>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+<%     }) %>
+
+
+
+      <!-- <div class="card w-200 bg-base-700 shadow-xl m-10 min-h-screen">
+        <div class="card-body">
+          <h2 class="card-title">First</h2>
+          <p>Why</p>
+        </div>
+      </div>
+      </div>
+      </div> -->
+
+      </div>
+      <div class="w-full m-w-screen flex items-center justify-center p-5">   
+        <% energyconserv1[1].forEach(({ name, data, img }) => { %>
+           <div class="card m-2 w-200  bg-base-700 shadow-xl">
+             <figure><img src="<%=img%>" class=" max-h-64"/></figure>
+               <div class="card-body p-5">
+                 <h2 class="card-title"><%=name%></h2>
+                 <div>
+                   <p>
+                       <%=data%>
+                   </p>
+                 </div>
+               </div>
+             </div>
+   
+   
+   <%     }) %>
+
+  </div>
+  
+<div class="divider lg:divider p-5 text-4xl font-bold">Energy Conserving Methods</div> 
+<div class="w-full min-w-screen flex items-center justify-center p-5">   
+  <% energyconserv1[2].forEach(({ name, data, img }) => { %>
+     <div class="card m-2 w-200 bg-base-700 shadow-xl">
+       <figure><img src="<%=img%>" class="max-h-64"/></figure>
+         <div class="card-body p-5">
+           <h2 class="card-title"><%=name%></h2>
+           <div>
+             <p>
+                 <%=data%>
+             </p>
+           </div>
+         </div>
+       </div>
+
+
+<%     }) %>
+
+</div>
+
+
+ <br />
+ <div class="w-full m-w-screen flex items-center justify-center p-5">   
+  <% energyconserv1[3].forEach(({ name, data, img }) => { %>
+     <div class="card m-2 w-200 bg-base-700 shadow-xl">
+       <figure><img src="<%=img%>" class="max-h-64"/></figure>
+         <div class="card-body p-5">
+           <h2 class="card-title"><%=name%></h2>
+           <div>
+             <p>
+                 <%=data%>
+             </p>
+           </div>
+         </div>
+       </div>
+
+
+<%     }) %>
+
+</div> 
+ <!-- <div class="w-full flex  items-center justify-center">
+  <div class="card  w-96 h-96 bg-base-700 shadow-xl m-10">
+    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">First</h2>
+      <p>Why</p>
+    </div>
+  </div>  <div class="card w-96 h-96 bg-base-700 shadow-xl m-10">
+    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">Shoes!</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+    </div>
+  </div>  <div class="card w-96 h-96 bg-base-700 shadow-xl m-10">
+    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">Shoes!</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+    </div>
+  </div>
+ </div> -->

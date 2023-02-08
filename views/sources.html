@@ -1,0 +1,24 @@
+<div class="hero">
+    <div class="container mx-auto max-w-6xl p-8 2xl:px-0 hero-content">
+      <div class="w-full text-center pt-2">
+        <h1 class="mb-5 text-5xl font-bold">
+Sources
+      </h1>
+      <p class="m-5 lead">
+<ul>
+<% sources.forEach(source => { %>
+    <% if(source.mla) { %>
+<li><%-source.text-%></li>
+<%    } else { %>
+    <li class=" p-1"><a href="<%=source.url%>" class="underline decoration-transparent hover:decoration-inherit transition duration-300 ease-in-out hover:text-gray-400 text-blue-300 active:text-base-100 visited:text-purple-500 "><%=source.url%></a></li> 
+    <% } %>
+<% }) %>
+</ul>
+      </p>
+   </div>
+   </div>
+   
+ <div id="secret"></div>
+
+</div>
+<div class="m-20 p-20 opacity-0">e</div>

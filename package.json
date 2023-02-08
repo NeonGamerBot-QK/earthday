@@ -1,0 +1,14 @@
+{
+  "name": "earthday",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "zip build/files.zip $(find . -name \"*\" -type f -not -path \".**/node_modules/**\" -not -path \".**/.git/**\") && PORT=2023 node ."
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "simple-json-db": "^2.0.0"
+  }
+}
