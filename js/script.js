@@ -204,7 +204,7 @@ if(theme) {
                 break;
             case "#/socialmedia":
                 fetch(
-                    "/views/socialmedia.html"
+                    "/views/campaign/socialmedia.html"
                 ).then(r => r.text()).then(data => {
                     render(data, { posts })
                 })
@@ -278,7 +278,7 @@ if(localStorage.getItem("secret_theme")) {
                     break;
             case "#/weeklyagenda":
                 fetch(
-                    "/views/dailyagenda.html"
+                    "/views/campaign/dailyagenda.html"
                 ).then(r => r.text()).then(data => {
                     // alert(location.search)
                     const params = new URLSearchParams(window.location.search)
@@ -297,7 +297,7 @@ if(localStorage.getItem("secret_theme")) {
                 case "#/mondaymeetingplan": 
                 case "#/mondaymeeting": 
                 fetch(
-                    "/views/mondaymeeting.html"
+                    "/views/campaign/mondaymeeting.html"
                 ).then(r => r.text()).then(data => {
                     // alert(location.search)
                     // days[params.get("q") ].active = true;
