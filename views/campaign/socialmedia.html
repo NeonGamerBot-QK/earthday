@@ -1,22 +1,19 @@
 <div class="hero">
-    <div class="container mx-auto max-w-6xl p-5 2xl:px-0 hero-content">
-      <div class="w-full text-center pt-2">
-        <h1 class="mb-5 text-5xl font-bold">
-Social Media Posts
-      </h1>
-      <div class="w-full flex items-center justify-center">   
-     <% posts[0].forEach(({ data, img }) => { %>
-        <div class="card w-96 bg-base-700 shadow-xl m-10" >
-    <figure><img src="<%=img%>"  class="max-h-64 w-full"/></figure>
-            <div class="card-body">
-              <!-- <h2 class="card-title"><%=name%></h2> -->
-              <p class="m-5"><%= data %></p>
-            </div>
+  <div class="container mx-auto max-w-6xl p-5 2xl:px-0 hero-content">
+    <div class="w-full text-center pt-2">
+      <h1 class="mb-5 text-5xl font-bold">Social Media Posts</h1>
+      <div class="w-full flex items-center justify-center">
+        <% posts[0].forEach(({ data, img }) => { %>
+        <div class="card w-96 bg-base-700 shadow-xl m-10">
+          <figure><img src="<%=img%>" class="max-h-64 w-full" /></figure>
+          <div class="card-body">
+            <!-- <h2 class="card-title"><%=name%></h2> -->
+            <p class="m-5"><%= data %></p>
           </div>
+        </div>
 
-
-<%     }) %>
-      <!-- <div class="card w-200 bg-base-700 shadow-xl m-10 min-h-screen">
+        <% }) %>
+        <!-- <div class="card w-200 bg-base-700 shadow-xl m-10 min-h-screen">
         <div class="card-body">
           <h2 class="card-title">First</h2>
           <p>Why</p>
@@ -24,22 +21,20 @@ Social Media Posts
       </div>
       </div>
       </div> -->
-
       </div>
       <br />
-      <div class="w-full flex  items-center justify-center">   
+      <div class="w-full flex items-center justify-center">
         <% posts[1].forEach(({ data, img }) => { %>
-           <div class="card w-100 bg-base-700 shadow-xl m-10">
-       <figure><img src="<%=img%>" class="max-h-64 w-full" /></figure>
-               <div class="card-body">
-                 <!-- <h2 class="card-title"><%=name%></h2> -->
-                 <p class="m-5"><%= data %></p>
-               </div>
-             </div>
-   
-   
-   <%     }) %>
-         <!-- <div class="card w-200 bg-base-700 shadow-xl m-10 min-h-screen">
+        <div class="card w-100 bg-base-700 shadow-xl m-10">
+          <figure><img src="<%=img%>" class="max-h-64 w-full" /></figure>
+          <div class="card-body">
+            <!-- <h2 class="card-title"><%=name%></h2> -->
+            <p class="m-5"><%= data %></p>
+          </div>
+        </div>
+
+        <% }) %>
+        <!-- <div class="card w-200 bg-base-700 shadow-xl m-10 min-h-screen">
            <div class="card-body">
              <h2 class="card-title">First</h2>
              <p>Why</p>
@@ -47,12 +42,11 @@ Social Media Posts
          </div>
          </div>
          </div> -->
-   
-         </div>
-  </div>
- <br />
- 
- <!-- <div class="w-full flex  items-center justify-center">
+      </div>
+    </div>
+    <br />
+
+    <!-- <div class="w-full flex  items-center justify-center">
   <div class="card  w-96 bg-base-700 shadow-xl m-10">
     <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
     <div class="card-body">
@@ -73,3 +67,5 @@ Social Media Posts
     </div>
   </div>
  </div> -->
+  </div>
+</div>

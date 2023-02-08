@@ -1,30 +1,31 @@
 <div class="hero">
-    <div class="container mx-auto max-w-6xl p-8 2xl:px-0 hero-content">
-      <div class="w-full text-center pt-2">
-        <h1 class="mb-5 text-5xl font-bold">
-Pros and Cons
-      </h1>
-      <div class="w-full flex  items-center justify-center">   
-     <% prosandcons.forEach(({ name, items }) => { %>
+  <div class="container mx-auto max-w-6xl p-8 2xl:px-0 hero-content">
+    <div class="w-full text-center pt-2">
+      <h1 class="mb-5 text-5xl font-bold">Pros and Cons</h1>
+      <div class="w-full flex items-center justify-center">
+        <% prosandcons.forEach(({ name, items }) => { %>
         <div class="card w-200 bg-base-700 shadow-xl m-10">
-            <div class="card-body">
-              <h2 class="card-title"><%=name%></h2>
-              <div class="flex justify-center hero">
-                <ul class="rounded-lg border border-base-900 w-150">
-                    <%items.forEach((item,index) => { %>
-                        <li class="px-6 py-2 border-b border-base-900 w-full <%= index === 0 ? 'rounded-t-lg' : index === (items.length -1) ? 'rounded-b-lg' : '' %>"><%=item%></li>
-<%  })%>
-                  <!-- <li class="px-6 py-2 border-b border-base-900 w-full rounded-t-lg">An item</li>
+          <div class="card-body">
+            <h2 class="card-title"><%=name%></h2>
+            <div class="flex justify-center hero">
+              <ul class="rounded-lg border border-base-900 w-150">
+                <%items.forEach((item,index) => { %>
+                <li
+                  class="px-6 py-2 border-b border-base-900 w-full <%= index === 0 ? 'rounded-t-lg' : index === (items.length -1) ? 'rounded-b-lg' : '' %>"
+                >
+                  <%=item%>
+                </li>
+                <% })%>
+                <!-- <li class="px-6 py-2 border-b border-base-900 w-full rounded-t-lg">An item</li>
                   <li class="px-6 py-2 border-b border-base-900 w-full">A second item</li>
                   <li class="px-6 py-2 w-full rounded-b-lg">And a fifth one</li> -->
-                </ul>
-              </div>
+              </ul>
             </div>
           </div>
+        </div>
 
-
-<%     }) %>
-      <!-- <div class="card w-200 bg-base-700 shadow-xl m-10 min-h-screen">
+        <% }) %>
+        <!-- <div class="card w-200 bg-base-700 shadow-xl m-10 min-h-screen">
         <div class="card-body">
           <h2 class="card-title">First</h2>
           <p>Why</p>
@@ -32,12 +33,11 @@ Pros and Cons
       </div>
       </div>
       </div> -->
-
       </div>
-  </div>
- <br />
- 
- <!-- <div class="w-full flex  items-center justify-center">
+    </div>
+    <br />
+
+    <!-- <div class="w-full flex  items-center justify-center">
   <div class="card  w-96 bg-base-700 shadow-xl m-10">
     <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
     <div class="card-body">
@@ -58,3 +58,5 @@ Pros and Cons
     </div>
   </div>
  </div> -->
+  </div>
+</div>
