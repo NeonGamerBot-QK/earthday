@@ -133,9 +133,9 @@
     ],
     [
       {
-        data: `Cars that use gasoline, Engine recharges itself while driving, Electric cars don't do this\nHybrids are about 20%-35% more fuel efficient than regular cars        `,
-        img: "https://afdc.energy.gov/sp/assets/car_pages/plugin-5a01af8665755060bc644e2c64581a48b309285feae83885cd3bad4d120107df.jpg",
-        name: "Hybrid Cars",
+        data: `Instead of using many plastic bags you can fit all your groceries into a big cloth bag!   `,
+        img: "https://www.ikea.com/us/en/images/products/spikrak-shopping-bag-cotton-natural__0968684_pe810513_s5.jpg?f=s",
+        name: "Reusable grocery bags",
       },
 
       {
@@ -198,7 +198,7 @@
     },
   ];
   function getImgSrc(obj) {
-    if (!"img" in obj) returnnull;
+    if (!"img" in obj) return null; 
     let url = obj.img;
     if (url.startsWith("/")) url = "https://earthday.saahild.com" + url;
     return { url, mla: false };
@@ -211,7 +211,7 @@
     ...posts[0].map(getImgSrc),
     ...posts[1].map(getImgSrc),
   ];
-  const sources = [...img_sources, { mla: true, text: "Test source" }];
+  const sources = [...img_sources]; // the mla sources were inputted manually 
   // alert(img_sources.map(e => e.url).joi"))
   fetch("/requests")
     .then((r) => r.json())
